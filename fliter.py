@@ -77,7 +77,7 @@ def filter(data):
   return new_data, article
 
 
-data = r'C:\Users\BIN\Desktop\論文資料\Opview_Insight_Result_AI自駕車_2024-0717.xlsx'
+data = r'XXXXX.xlsx'
 
 df = pd.read_excel(data)
 new_data, article = filter(df['內容'])
@@ -85,7 +85,7 @@ new_data, article = filter(df['內容'])
 dup = []
 word_count = []
 id = 1
-file = open(r'C:\Users\BIN\Desktop\論文資料\Opview_Insight_Result_AI自駕車_2024-0717','w',encoding='utf-8') # output file name should change or it will be covered
+file = open(r'XXXX','w',encoding='utf-8') # output file name should change or it will be covered
 for i in new_data:
   if i not in dup:
     tmp = str(id) + ". " + i + '\n'
@@ -98,7 +98,7 @@ id = 1
 dup = []
 word_count = []
 id = 1
-file = open(r'C:\Users\BIN\Desktop\論文資料\Opview_Insight_Result_AI自駕車_2024-0717文章.txt','w',encoding='utf-8') # output file name should change or it will be covered
+file = open(r'XXXX','w',encoding='utf-8') # output file name should change or it will be covered
 for i in article:
   if i not in dup:
     tmp = str(id) + ". " + i + '\n'
