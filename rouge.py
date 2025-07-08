@@ -96,28 +96,3 @@ if __name__ == '__main__':
         # 關閉 Excel 應用程式
         excel_wb.close()
         app.quit()
-# import pandas as pd
-# import matplotlib.pyplot as plt
-
-# # 讀取 Excel 檔案
-# data = r"C:\Users\BIN\Desktop\train.xlsx"
-# df = pd.read_excel(data)
-
-# # 確保欄位名稱與 Excel 文件一致
-# df["Validation Loss"] = pd.to_numeric(df["Validation loss"], errors="coerce")
-# df["Full Validation Loss"] = pd.to_numeric(df["Full Validation loss"], errors="coerce")
-# df["Training Loss"] = pd.to_numeric(df["Training loss"], errors="coerce")
-# df["Evaluation Loss"] = pd.to_numeric(df["Evaluation loss"], errors="coerce")  # 假設 Evaluation Loss 存在
-
-# # 繪製圖表
-# plt.figure(figsize=(12, 8))
-# plt.plot(df["Step"], df["Training Loss"], label="Training Loss", color="blue")
-# plt.plot(df["Step"], df["Validation Loss"], label="Validation Loss", color="orange")
-# plt.plot(df["Step"], df["Full Validation Loss"], label="Full Validation Loss", color="green")
-# plt.plot(df["Step"], df["Evaluation Loss"], label="Evaluation Loss", color="red")  # 繪製 Evaluation Loss
-# plt.xlabel("Step")
-# plt.ylabel("Loss")
-# plt.title("Loss Curve During Training and Evaluation")
-# plt.legend()
-# plt.grid()
-# plt.show()
