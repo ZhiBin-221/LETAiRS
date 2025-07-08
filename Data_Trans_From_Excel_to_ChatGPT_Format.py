@@ -55,9 +55,9 @@ def convert_to_chatgpt_format(input_jsonl, output_jsonl):
 # 主程式執行
 if __name__ == "__main__":
     # 路徑設定
-    input_excel = r"C:\Users\BIN\Desktop\論文資料\data_trans\dataset_test\100_TRAIN.xlsx"  # 替換為您的 Excel 檔案路徑
-    intermediate_jsonl = "intermediate.jsonl"  # JSONL 暫存檔
-    processed_jsonl = r"C:\Users\BIN\Desktop\論文資料\data_trans\dataset_test\processed_with_prompt.jsonl"  # JSONL 加入 prompt 後的檔案
+    input_excel = r"XXXX.xlsx"  # 替換為您的 Excel 檔案路徑
+    intermediate_jsonl = "XXXX.jsonl"  # JSONL 暫存檔
+    processed_jsonl = r"XXXX.jsonl"  # JSONL 加入 prompt 後的檔案
     final_output = "chatgpt_format.jsonl"  # 最終輸出檔案
 
     # Prompt 前綴
